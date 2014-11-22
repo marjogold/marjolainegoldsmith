@@ -5,19 +5,41 @@ body {
     font-family: 'Gotham SSm A', 'Gotham SSm B';
     font-weight: 700;
     font-style: normal;
-    text-transform: uppercase;
-    color: lighten(black, 25%);
+    color: lighten(black, 5%);
     width: 100%;
+    min-width: 920px;
+    text-transform: uppercase;
 }
 
 ul {
     list-style-type: none;
+    padding-left: 40px;
+    padding-right: 40px;
     line-height: 2.3em;
-    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    li {
+        display: inline;
+        margin-left: 55px;
+    }
+}
+
+.main {
+    width: 920px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
+    letter-spacing: 5px;
     margin: 0;
+    position: relative;
+    padding: 40px;
+    padding-bottom: 30px;
+    font-size: 57px;
+    width: 100%;
 }
 
 a {
@@ -48,7 +70,20 @@ a {
 
 @media (max-width: 920px) {
   body {
-    font-size: 1.4em
+    font-size: 1.4em;
+  }
+
+  h1 {
+    font-size: 500%;
+    width: auto;
+
+    span {
+        display: none;
+    }
+
+    &:after {
+        content: "Marjolaine";
+    }
   }
 
   ul {
@@ -59,9 +94,11 @@ a {
     width: 100%;
   }
 
+  .main {
+    width: 100%;
+  }
+
   .content {
-    padding-left: 0px;
-    text-align: center;
     width: 100%;
   }
 
