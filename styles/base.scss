@@ -1,0 +1,69 @@
+@import "normalize";
+
+body {
+    font-size: .9em;
+    font-family: 'Gotham SSm A', 'Gotham SSm B';
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    color: lighten(black, 25%);
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 2.3em;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.sidebar {
+    display: inline-block;
+    position: relative;
+    padding: 40px;
+    width: 300px;
+    float: left;
+}
+
+.content {
+    display: block;
+    position: relative;
+    float: left;
+    width: 500px;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+@media (max-width: 920px) {
+  body {
+    font-size: 1.4em
+  }
+
+  ul {
+    line-height: 1.7em;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .content {
+    padding-left: 0px;
+    text-align: center;
+    width: 100%;
+  }
+
+}
+
