@@ -1,0 +1,16 @@
+body {
+    font-family: 'Arimo', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.nostyle {
+    color: inherit;
+}
+
+.spaced {
+    letter-spacing: .35em;
+}
+
+.menu {
+    color: #333;
+}

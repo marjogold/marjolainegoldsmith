@@ -6,39 +6,41 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <!-- syntax highlighting CSS -->
+        <link href="//fonts.googleapis.com/css?family=Arimo:400,400italic,700italic" rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/css/basscss.css">
-
-        <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/base.css">
-
     </head>
+
     <body>
+      <div class="mxn2 clearfix">
+        <div class="col-8 mx-auto caps center spaced">
+        <h1>Marjolaine Goldsmith</h1>
+        </div>
+      </div>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
+      <div class="mxn2 clearfix mb3 menu">
+        <div class="col-8 mx-auto caps italic bold center">
+          <div class="col col-6 md-col-3">
+            <h4><a href="" class="nostyle">Video</a></h4>
           </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
+          <div class="col col-6 md-col-3">
+            <h4><a href="" class="nostyle">Bio</a></h4>
+          </div>
+          <div class="col col-6 md-col-3">
+            <h4><a href="" class="nostyle">Headshots</a></h4>
+          </div>
+          <div class="col col-6 md-col-3">
+            <h4><a href="" class="nostyle">Resume</a></h4>
           </div>
         </div>
+      </div>
 
+      <div class="mxn2 clearfix">
+        <div class="col-8 md-col-5 px2 mx-auto center">
+          {{content}}
+        </div>
+      </div>
+
+    <script src="/scripts/main.js"></script>
     </body>
 </html>
