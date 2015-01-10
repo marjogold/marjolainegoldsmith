@@ -14,29 +14,29 @@
     <body>
       <div class="mxn2 clearfix">
         <div class="mx-auto caps center spaced">
-          <h1 class="center">Marjolaine Goldsmith</h1>
+          <a href="/" class="nostyle nodec"><h1 class="center">Marjolaine Goldsmith</h1></a>
         </div>
       </div>
 
       <div class="mxn2 clearfix mb3 menu">
         <div class="col-9 md-col-7 mx-auto caps italic bold center">
           <div class="col col-6 md-col-3">
-            <h4><a href="" class="nostyle">Resume</a></h4>
+            <h4><a href="/resume.html" class="nostyle {% if page.url == "/resume.html" %}active{% endif %}">Resume</a></h4>
           </div>
           <div class="col col-6 md-col-3">
-            <h4><a href="" class="nostyle">Headshot</a></h4>
+            <h4><a href="/headshot.html" class="nostyle {% if page.url == "/headshot.html" %}active{% endif %}">Headshot</a></h4>
           </div>
           <div class="col col-6 md-col-3">
-            <h4><a href="" class="nostyle">Video</a></h4>
+            <h4><a href="/video.html" class="nostyle {% if page.url == "/video.html" %}active{% endif %}">Video</a></h4>
           </div>
           <div class="col col-6 md-col-3">
-            <h4><a href="" class="nostyle">Bio</a></h4>
+            <h4><a href="/bio.html" class="nostyle {% if page.url == "/bio.html" %}active{% endif %}">Bio</a></h4>
           </div>
         </div>
       </div>
 
       <div class="mxn2 clearfix">
-        <div class="col-8 md-col-5 px2 mx-auto center">
+        <div class="col-8 md-col-6 px2 mx-auto">
           {{content}}
         </div>
       </div>
@@ -45,6 +45,14 @@
       // Preload gif
       var image = new Image();
       image.src = '/images/mj.jpg';
+      </script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="/scripts/jquery.fitvids.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          // Target your .container, .wrapper, .post, etc.
+          $("body").fitVids();
+        });
       </script>
     </body>
 </html>

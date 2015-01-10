@@ -7,10 +7,18 @@ body {
     color: inherit;
 }
 
+.nodec:hover {
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline;
+}
+
 .spaced {
     letter-spacing: .35em;
 }
 
-.menu {
+.menu {3
     color: #333;
 }
